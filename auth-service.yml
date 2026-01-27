@@ -12,3 +12,8 @@ cors:
   test: http://localhost:3000
   admin: https://admin.girlsvendor.com
   website: https://www.girlsvendor.com
+
+
+
+uploads:
+  folder: ./uploads

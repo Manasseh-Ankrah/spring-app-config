@@ -5,7 +5,7 @@ spring:
         - id: AUTH-SERVICE
           uri: lb://AUTH-SERVICE
           predicates:
-            - Path=/api/v2/auth/**
+            - Path=/api/v3/auth/**
 
         - id: ORDER-SERVICE
           uri: lb://ORDER-SERVICE

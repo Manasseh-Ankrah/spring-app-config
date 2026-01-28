@@ -36,3 +36,11 @@ spring:
               args:
                 name: paymentServiceCB
                 fallbackUri: forward:/fallback/payment
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,refresh,busrefresh
+

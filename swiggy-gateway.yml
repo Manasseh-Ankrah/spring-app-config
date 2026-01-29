@@ -13,7 +13,7 @@ spring:
         - id: ORDER-SERVICE
           uri: lb://ORDER-SERVICE
           predicates:
-            - Path=/order/**
+            - Path=/orders/**
           filters:
             - name: CircuitBreaker
               args:

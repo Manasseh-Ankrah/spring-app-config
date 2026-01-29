@@ -1,6 +1,9 @@
 spring:
   cloud:
     gateway:
+      refresh:
+        enabled:true
+    
       routes:
         - id: AUTH-SERVICE
           uri: lb://AUTH-SERVICE
@@ -36,5 +39,7 @@ spring:
               args:
                 name: paymentServiceCB
                 fallbackUri: forward:/fallback/payment
+
+    
 
 

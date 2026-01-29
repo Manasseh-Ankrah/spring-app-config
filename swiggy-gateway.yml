@@ -38,13 +38,3 @@ spring:
                 fallbackUri: forward:/fallback/payment
 
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info,refresh,busrefresh
-  endpoint:
-    busrefresh:
-      enabled: true
-
-

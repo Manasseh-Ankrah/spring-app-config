@@ -9,13 +9,13 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 
-# management:
-#   endpoints:
-#     web:
-#       exposure:
-#         include: health,info,refresh,busrefresh,gateway
-#   endpoint:
-#     busrefresh:
-#       enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,refresh,busrefresh,gateway
+  endpoint:
+    busrefresh:
+      enabled: true
 
 
